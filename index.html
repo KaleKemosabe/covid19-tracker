@@ -5,19 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/p5@1.0.0/lib/p5.js"></script>
     <link rel="stylesheet" href="style.css">
-    <title>Particles</title>
+    <title>Covid19 Tracker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <p>Covid19 Finland</p>
+        <p>Covid19 Tracker</p>
     </header>
     <section id="values">
         <div class="container">
-            <h1>Covid19 Tracker</h1>
-            <h2>Daily cases in Finland</h2>
+            <h1>Covid19 Totals by Country</h1>
+            <h2>Please search by using ISO 3166 country codes (available <a href="https://en.wikipedia.org/wiki/List_of_ISO_3166_country_codes" target="_blank">here</a> )</h2>
+            <div class="input">
+                <input type="text" class="inputValue" placeholder="Enter a country">
+                <input type="submit" value="Click" class="button">
+            </div>
+                <div class="display">
+                    <div class="display1">
+                        <h3>Total amount</h3>
+                        <p class="cases">0</p>
+                    </div>
+                    <div class="display2">
+                        <h3>Recovered</h3>
+                        <p class="recovered">0</p>
+                    </div>
+                    <div class="display3">
+                        <h3>Deaths</h3>
+                        <p class="deaths">0</p>
+                    </div>
+                </div>
         </div>
     </section>
-    <!-- <img src="https://cdn.pixabay.com/photo/2015/05/27/15/49/monkey-786858_960_720.png" alt="monkey-face"> -->
     <script src="script.js"></script>
 </body>
 </html>

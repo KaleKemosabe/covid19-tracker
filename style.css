@@ -3,6 +3,7 @@ body {
   padding: 0;
   overflow: hidden;
   background: rgb(55, 100, 144);
+  font-family: "Yusei Magic", sans-serif;
 }
 
 header {
@@ -21,14 +22,6 @@ header p {
   font-size: 2rem;
 }
 
-/* img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-} */
-
 .container {
   position: absolute;
   background-color: rgb(255, 255, 255, 0.95);
@@ -43,10 +36,47 @@ header p {
 }
 
 h1 {
-  font-size: 4rem;
+  font-size: 2rem;
   text-align: center;
 }
 
 h2 {
+  font-size: 1rem;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.input {
+  text-align: center;
+}
+
+.input .inputValue {
+  border: none;
+  width: 50%;
+  padding: 1rem;
+  background-color: rgb(55, 100, 144);
+  color: #ffffff;
+  border-radius: 5px;
+}
+
+.input .inputValue::placeholder {
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.input .button {
+  border: 1px solid rgb(55, 100, 144);
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  font-family: "Yusei Magic", sans-serif;
+}
+
+.display {
+  margin: 2rem 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   text-align: center;
 }

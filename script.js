@@ -1,3 +1,4 @@
+// particles
 const particles = [];
 
 function setup() {
@@ -58,3 +59,19 @@ class Particle {
         });
     }
 }
+
+// covid data API
+let covidApi = 'https://covidapi.info/api/v1/country/';
+let button = document.querySelector('.button');
+let inputValue = document.querySelector('.inputValue');
+let countryName = document.querySelector('.name');
+let cases = document.querySelector('.cases');
+
+button.addEventListener('click', function() {
+    fetch(covidApi+inputValue.value).then(response => response.json()).then(data => {
+        let caseAmount = data['result']['2021-01-29']['confirmed'];
+        // console.log(caseAmount);
+        cases.innerHTML = caseAmount;
+    })
+    .catch(error => alert("Please search by using ISO 3166 countrycodes."));
+});
